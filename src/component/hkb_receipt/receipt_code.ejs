@@ -1,0 +1,46 @@
+<div class="hkb_receipt_code">
+
+    <!--绿色背景-->
+
+    <div class="receipt_setting">
+
+        <div class="receipt_tittle">向客户收款</div>
+
+    </div>
+
+    <!--白色背景-->
+
+    <div class="receipt_content">
+
+        <div class="receipt_figure">收款金额：¥299</div>
+
+        <!-- 二维码 -->
+        <a class="codes_card" id="business_QR_code" href="../hkb_collection/hkb_collection.html"></a>
+
+        <!-- 中间图片-->
+        <div class="logo_QR"><img src="../../icon/coding_logo.png"></div>
+
+        <div class="receipt_hint">订单提交成功，等待用户扫描......</div>
+
+
+    </div>
+
+</div>
+
+<script>
+
+    //二维码
+    var qrcode = new QRCode('business_QR_code',{
+
+        text:'http://www.baidu.com',             //输入二维码解析网址
+        correctLevel : QRCode.CorrectLevel.H     //容错率30%
+
+    })
+    //注意
+
+    //使用API
+    //qrcode.clear()                    //二维码清除方法
+    //qrcode.makeCode('new_content')    //添加新的解析地址
+
+
+</script>

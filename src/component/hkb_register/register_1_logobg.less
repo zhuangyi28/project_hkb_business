@@ -1,0 +1,94 @@
+
+.hkb_business_page {
+
+  .hkb_business_title {
+    font-size: 20px;
+    padding: 50px 0 30px 20px;
+  }
+
+  .business_section {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 0 20px 10px;
+
+    &:after{
+
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      border-bottom: 1px solid #ddd;
+      width: 90%;
+      left: calc(5%);
+      transform: scale(1,.5);
+
+    }
+
+
+    .business_section_text {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      font-size: 14px;
+
+      img {
+        width: 20px;
+        height: 20px;
+        padding: 5px 20px 5px 5px;
+      }
+      input {
+        position: relative;
+        border: transparent;
+        font-size: 14px;
+        width: 55%;
+        height: 30px;
+
+      }
+    }
+    input.text_value_button {
+      position: absolute;
+      top: 0;
+      right:20px;
+      font-size: 14px;
+      border-radius: 5px;
+      border: 1px solid #8abd24;
+      outline: 0;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-appearance: none;
+      background-color: transparent;
+      color: #8abd24;
+      text-align: center;
+      padding: 5px 10px;
+    }
+  }
+
+  .hkb_code{
+    color: #f39700;
+    padding: 0 20px;
+  }
+
+  .hkb_btn_area{
+    margin: 40px auto;
+    a.btn_hkb{
+      display: block;
+      height: 42px;
+      margin: 0 auto;
+      width: 90%;
+      background: -webkit-linear-gradient(left,#8abc23,#9ac53b,#acd163,#c4dc81);
+      color: #fff;
+      border-radius: 5px;
+      line-height: 42px;
+      font-size: 16px;
+      text-align: center;
+    }
+    .btn_hkb:active{
+      opacity: .8;
+    }
+  }
+}
+

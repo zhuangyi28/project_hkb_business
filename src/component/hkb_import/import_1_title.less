@@ -1,0 +1,115 @@
+.hkb_import_page{
+
+.hkb_import_circle {
+
+  .hkb_import_picture{
+    margin: 20px auto 0 auto;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow:hidden;
+  }
+
+  .hkb_import_panel {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 16px;
+  }
+}
+
+.hkb_import_box {
+  padding:10px 0 10px 0;
+  margin:20px 20px 0 20px;
+  border-radius:5px;
+  background:#fff;
+  .value {
+    position: relative;
+    .import_title {
+      font-size: 16px;
+      padding: 20px 0 10px 20px;
+    }
+    .value_box{
+      display: flex;
+      padding: 0 15px;
+      .rmb_unit{
+        font-size: 32px;
+        color: #4a4a4a;
+        height: 35px;
+        margin-top: 18px;
+        padding-right: 2px;
+      }
+      .number{
+        display: flex;
+        width: 85%;
+        .keyNumshow{
+          font-size: 50px;
+          color: #9ac53b;
+          padding-left: 2px;
+          width: 100%;
+          height: 68px;
+          span{
+            color: #4a4a4a;
+          }
+        }
+        .focusing:after{
+          content: '▏';
+          display: inline-block;
+          transform: scaleX(0.5);
+          -webkit-transform: scaleX(0.5);
+          width: 0;
+          font-size: 42px;
+          position: relative;
+          bottom: 4px;
+          color: #9ac53b;
+          animation: fadeInInputKeybroad .6s infinite;
+          -webkit-animation: fadeInInputKeybroad .6s infinite;
+          animation-direction: alternate;
+          -webkit-animation-direction: alternate;
+        }
+        input{
+          border: none;
+          outline: none;
+          display: inline;
+          -webkit-appearance: none;
+          background: transparent;
+          color: transparent;
+          position: absolute;
+          top: 10px;
+          left: 30px;
+        }
+      }
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 15px;
+      width: 90%;
+      height: 1px;
+      border-bottom: 1px solid #ddd;
+      transform-origin:0 0;
+      transform: scaleY(.6);
+    }
+
+  }
+
+  .money_next {
+    display: block;
+    height: 42px;
+    width: 90%;
+    background: linear-gradient(left, #8abc23, #9ac53b, #acd163, #c4dc81);
+    border-radius: 5px;
+    line-height: 42px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    margin: 30px auto;
+
+.button{
+  color: white;
+}
+  }
+}
+
+  }

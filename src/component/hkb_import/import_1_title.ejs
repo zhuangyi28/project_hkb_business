@@ -1,0 +1,54 @@
+
+<div class="hkb_import_page">
+
+<!--店铺-->
+
+<div class="hkb_import_circle">
+    <div class="hkb_import_picture">
+        <img src="../../icon/logo.jpg ">
+
+    </div>
+    <div class="hkb_import_panel">
+        <div class="import_panel_title">合村日本料理(虹桥路店)</div>
+    </div>
+</div>
+
+
+<!--输入面板-->
+
+<div class="hkb_import_box">
+    <div class="value">
+        <div class="import_title">合村日本料理</div>
+
+        <div class="value_box">
+            <span class="rmb_unit">￥</span>
+            <div class="number keybroad">
+                <div class="keyNumshow" id="savekeyNum"></div>
+                <input readonly class="key_input" id="key_input" value="">
+            </div>
+        </div>
+    </div>
+
+    <a class="money_next" href="../hkb_receipt/hkb_receipt.html">
+
+        <span class="button">确认</span>
+
+    </a>
+
+</div>
+
+</div>
+
+
+<script>
+    /*弹出数字键盘*/
+    var jfkeybroad = new jfNumKeybroad.keyBroadShow({
+        'hideButton':'money_next',   //其他的关闭按钮
+        'showNumEle':'savekeyNum',   //点击出现键盘的元素，并且存储数字，ID选择器
+        'saveNumEle':'keyNumshow',  //用于显示当前金额的值的元素，用于判断光标，class选择器
+        'clearButton':false,       //清除数字按钮
+        'saveInput':'key_input',   //存入键盘的值，input元素的class选择器
+        'MaxNum':'9'               //键盘可以输入的最大位数
+    });
+    jfkeybroad.run();//页面初始的时候，开启键盘
+</script>
