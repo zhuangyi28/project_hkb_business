@@ -1,0 +1,210 @@
+.hkb_transaction_plate {
+
+  .transaction_title_1 {
+    background: #ffffff;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    .transaction_writer_1{
+      padding:10px 15px 5px 15px;
+      font-weight: bold;
+
+      img {
+        width: 18px;
+        height: 17px;
+        vertical-align: sub;
+        margin-right: 5px;
+
+      }
+    }
+
+  }
+
+  .transaction_data {
+    position: relative;
+    padding: 15px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    img {
+      width: 18px;
+      height: 18px;
+      vertical-align: middle;
+    }
+    .calendar{
+      width: 18px;
+      height: 18px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
+    .selection_star_time,.selection_end_time{
+      color: #ddd;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 15px;
+      width: 92%;
+      height: 1px;
+      border-bottom: 1px solid #ddd;
+      transform-origin: 0 0;
+      transform: scaleY(.6);
+    }
+
+  }
+  .transaction_data_2+.transaction_data_2{
+
+    &:after{
+        content: '';
+        border-bottom: none;
+    }
+  }
+
+
+  .transaction_title_4 {
+    position: relative;
+    padding: 10px 15px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: justify;
+    .transaction_list{
+
+      div:first-child{
+        color: #8a8a8a;
+
+      }
+      .pay{
+
+        font-size: 18px;
+        color: #8abd24;
+      }
+
+
+    }
+    .transaction_list+.transaction_list{
+      div+div{
+        text-align: right;
+        font-size: 18px;
+      }
+    }
+
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 15px;
+      width: 92%;
+      height: 1px;
+      border-bottom: 1px solid #ddd;
+      transform-origin: 0 0;
+      transform: scaleY(.6);
+    }
+
+  }
+
+  .transaction_title_5 {
+    position: relative;
+    padding: 15px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    font-size: 14px;
+    text-align: justify;
+    span:first-child{
+      color: #8a8a8a;
+    }
+
+  }
+
+
+}     
+
+
+.hkb_transaction_background {
+  margin-top: 10px;
+  background-color: #fff;
+  height: calc(~'100vh - 291px');
+  overflow-y: auto;
+  overflow: scroll;
+
+  .transaction_title_6 {
+
+      position: relative;
+      padding: 15px;
+      font-size: 14px;
+
+      img {
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin-top: 10px;
+        margin-right: 10px;
+        vertical-align: sub;
+      }
+    .detailed_list{
+      width: calc(~'100% - 30px');
+
+      div+div{
+        text-align: right;
+        .refund{
+          color: #8a8a8a;
+        }
+        P{
+          color: #8abd24;
+        }
+        p+p{
+          color: #8a8a8a;
+        }
+      }
+    }
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 15px;
+        width: 92%;
+        height: 1px;
+        border-bottom: 1px solid #ddd;
+        transform-origin: 0 0;
+        transform: scaleY(.6);
+      }
+    &:last-child:after{
+      border-bottom: none;
+    }
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
