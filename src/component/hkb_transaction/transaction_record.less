@@ -20,30 +20,53 @@
 
   }
 
-  .transaction_data {
+  .transaction_date {
     position: relative;
     padding: 15px;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
     background: #ffffff;
     text-align: center;
     font-size: 14px;
-    img {
-      width: 18px;
-      height: 18px;
-      vertical-align: middle;
-    }
-    .calendar{
-      width: 18px;
-      height: 18px;
-      vertical-align: middle;
-      margin-right: 5px;
+    label.hkb_alignment_center{
+
+      width: 100%;
+      .time_show{
+
+        .calendar{
+          width: 18px;
+          height: 18px;
+          vertical-align: middle;
+          margin-right: 5px;
+          margin-bottom: 5px;
+        }
+
+        span{
+          font-size: 18px;
+        }
+      }
+
+      img {
+        width: 18px;
+        height: 18px;
+        vertical-align: middle;
+      }
+
+      .input_date{
+
+        position: absolute;
+        top: -999px;
+        right: 0;
+      }
+      .selection_star_time,.selection_end_time{
+        color: #ddd;
+      }
+
     }
 
-    .selection_star_time,.selection_end_time{
-      color: #ddd;
+    &:last-child:after{
+      content: '';
+      border-bottom: none;
     }
+
 
     &:after {
       content: '';
@@ -56,16 +79,27 @@
       transform-origin: 0 0;
       transform: scaleY(.6);
     }
+    &:active{
+      background: #f1f1f1;
+    }
 
   }
-  .transaction_data_2+.transaction_data_2{
+
+/*  .transaction_date+.transaction_date{
 
     &:after{
         content: '';
         border-bottom: none;
     }
-  }
+    &:active{
+      background: #f1f1f1;
+    }
+  }*/
 
+
+}
+
+.overview_list{
 
   .transaction_title_4 {
     position: relative;
@@ -128,8 +162,7 @@
 
   }
 
-
-}     
+}
 
 
 .hkb_transaction_background {

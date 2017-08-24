@@ -1,3 +1,4 @@
+<!-- title -->
 <div class="hkb_transaction_plate">
 
     <div class="transaction_title_1">
@@ -7,42 +8,59 @@
 
     </div>
 
+    <!--开始时间选择-->
+    <div class="transaction_date">
 
-    <!--时间选择-->
-    <div class="transaction_data">
+        <label class="hkb_alignment_center">
 
+        <div class="time_show">
 
-        <div>
             <img class="calendar" src="../../icon/store-2.png"><span>2017-06-29</span>
+
         </div>
 
         <div class="selection_star_time">
 
             <span>点击选择开始时间</span>
             <img src="../../icon/direction.png">
-            <input type="date">
+            <input type="date" class="input_date" id="starTime" value=""/>
 
         </div>
+
+        </label>
 
     </div>
 
-    <!--时间选择-->
-    <div class="transaction_data">
+    <!--结束时间选择-->
+    <div class="transaction_date">
 
-        <div>
+        <label class="hkb_alignment_center">
+
+        <div class="time_show">
+
             <img class="calendar" src="../../icon/store-2.png"><span>2017-07-29</span>
+
         </div>
+
 
         <div class="selection_end_time">
 
             <span>点击选择结束时间</span>
             <img src="../../icon/direction.png">
-            <input type="date">
+            <input type="date" class="input_date" id="endTime" value=""/>
 
         </div>
 
+
+        </label>
+
     </div>
 
+</div>
+
+<!-- 总览统计 -->
+
+<div class="overview_list">
 
     <div class="transaction_title_4">
 
@@ -83,9 +101,9 @@
 
     </div>
 
-
 </div>
 
+<!-- 列表 -->
 
 <div class="hkb_transaction_background">
 
@@ -331,6 +349,12 @@
 
 
 </div>
+
+<script>
+
+    transactionList.dateChoose();
+
+</script>
 
 
 
