@@ -6,8 +6,9 @@
     width: 100%;
     font-size: 16px;
     .transaction_writer_1{
-      padding: 10px 15px;
+      padding:10px 15px 5px 15px;
       font-weight: bold;
+
       img {
         width: 18px;
         height: 17px;
@@ -19,36 +20,54 @@
 
   }
 
-  .statistics_data_2 {
+  .transaction_date {
     position: relative;
     padding: 15px;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
     background: #ffffff;
     text-align: center;
     font-size: 14px;
-    img {
-      width: 18px;
-      height: 18px;
-      vertical-align: middle;
+    label.hkb_alignment_center{
+
+      width: 100%;
+      .time_show{
+
+        .calendar{
+          width: 18px;
+          height: 18px;
+          vertical-align: middle;
+          margin-right: 5px;
+          margin-bottom: 5px;
+        }
+
+        span{
+          font-size: 18px;
+        }
+      }
+
+      img {
+        width: 18px;
+        height: 18px;
+        vertical-align: middle;
+      }
+
+      .input_date{
+
+        position: absolute;
+        top: -999px;
+        right: 0;
+      }
+      .selection_star_time,.selection_end_time{
+        color: #ddd;
+      }
 
     }
-    .calendar{
-      width: 18px;
-      height: 18px;
-      vertical-align: middle;
-      margin-right: 5px;
-    }
-    .selection_star_time,.selection_end_time{
+    &:last-child:after{
 
-      color: #ababab;
+      content: '';
+      border-bottom: none;
     }
 
-&:last-child:after{
-  content: '';
-  border-bottom: none;
-}
+
     &:after {
       content: '';
       position: absolute;
@@ -59,6 +78,9 @@
       border-bottom: 1px solid #ddd;
       transform-origin: 0 0;
       transform: scaleY(.6);
+    }
+    &:active{
+      background: #f1f1f1;
     }
 
   }

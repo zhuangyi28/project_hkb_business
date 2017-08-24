@@ -8,36 +8,51 @@
 
     </div>
 
-    <!--时间选择-->
-    <div class="statistics_data_2">
+    <!--开始时间选择-->
+    <div class="transaction_date">
 
+        <label class="hkb_alignment_center">
 
-        <div>
-            <img class="calendar" src="../../icon/store-2.png"><span>2017-06-29</span>
-        </div>
+            <div class="time_show">
 
-        <div class="selection_star_time">
+                <img class="calendar" src="../../icon/store-2.png"><span>2017-06-29</span>
 
-            <span>点击选择开始时间</span>
-            <img  src="../../icon/direction.png">
+            </div>
 
-        </div>
+            <div class="selection_star_time">
+
+                <span>点击选择开始时间</span>
+                <img src="../../icon/direction.png">
+                <input type="date" class="input_date" id="starTime" value=""/>
+
+            </div>
+
+        </label>
 
     </div>
 
-    <!--时间选择-->
-    <div class="statistics_data_2">
+    <!--结束时间选择-->
+    <div class="transaction_date">
 
-        <div>
-            <img class="calendar" src="../../icon/store-2.png"><span>2017-07-29</span>
-        </div>
+        <label class="hkb_alignment_center">
 
-        <div class="selection_end_time">
+            <div class="time_show">
 
-            <span>点击选择结束时间</span>
-            <img src="../../icon/direction.png">
+                <img class="calendar" src="../../icon/store-2.png"><span>2017-07-29</span>
 
-        </div>
+            </div>
+
+
+            <div class="selection_end_time">
+
+                <span>点击选择结束时间</span>
+                <img src="../../icon/direction.png">
+                <input type="date" class="input_date" id="endTime" value=""/>
+
+            </div>
+
+
+        </label>
 
     </div>
 
@@ -152,7 +167,14 @@
 
 </div>
 
+<script>
 
+
+    transactionList.dateChoose();
+
+
+
+</script>
 
 
 
