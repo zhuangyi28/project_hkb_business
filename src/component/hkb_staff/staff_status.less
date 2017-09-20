@@ -1,0 +1,137 @@
+.hkb_staff_status {
+
+  .hkb_staff_status_1{
+
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .hkb_imf{
+
+      width: calc(~'100% - 70px');
+      margin-left: 10px;
+      div{
+
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+      }
+
+
+    }
+
+    padding: 15px;
+    /* justify-content: space-between;*/
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    text-align: justify;
+    font-size: 16px;
+
+    div {
+      text-align: left;
+    }
+
+  }
+
+  .hkb_staff_status_gather {
+
+    margin-top: 10px;
+    background: #ffffff;
+    padding-bottom: 15px;
+
+
+    .gather_1 {
+
+      position: relative;
+      padding: 15px;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      text-align: justify;
+      font-size: 14px;
+      color: #8a8a8a;
+
+      .black{
+        color: #4a4a4a;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 15px;
+        width: 92%;
+        height: 1px;
+        border-bottom: 1px solid #ddd;
+        transform-origin: 0 0;
+        transform: scaleY(.6);
+
+      }
+
+    }
+
+    .gather_2 {
+
+      position: relative;
+      padding: 15px;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      text-align: justify;
+      font-size: 14px;
+      .gray{
+        color: #8a8a8a;
+      }
+
+      div+div{
+        color: #8abd24;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 15px;
+        width: 92%;
+        height: 1px;
+        border-bottom: 1px solid #ddd;
+        transform-origin: 0 0;
+        transform: scaleY(.6);
+
+      }
+
+
+
+    }
+
+    .hkb_staff_status_btn{
+
+      height: 42px;
+      width: 90%;
+      background: linear-gradient(left, #8abc23, #9ac53b, #acd163, #c4dc81);
+      border-radius: 5px;
+      text-align: center;
+      margin: 30px auto;
+
+      .status_btn{
+        font-size: 16px;
+        line-height: 42px;
+        color:#ffffff;
+        background: none;
+        margin: 0 auto;
+      }
+
+
+    }
+
+
+  }
+
+
+
+
+}

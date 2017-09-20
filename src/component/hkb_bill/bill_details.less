@@ -1,0 +1,125 @@
+.hkb_bill_details {
+
+  .hkb_bill_details_1 {
+
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .hkb_imf{
+
+      width: calc(~'100% - 70px');
+      margin-left: 10px;
+      div{
+
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+      }
+
+
+    }
+
+    padding: 15px;
+    /* justify-content: space-between;*/
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    text-align: justify;
+    font-size: 16px;
+
+  }
+
+  .hkb_bill_details_2 {
+
+    padding: 15px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    text-align: justify;
+    font-size: 14px;
+    margin-top: 10px;
+    div:first-child{
+
+      color: #8a8a8a;
+    }
+
+    div + div {
+      font-size: 20px;
+    }
+
+  }
+
+  .hkb_bill_details_gather {
+
+    margin-top: 10px;
+    background: #ffffff;
+    padding-bottom: 20px;
+
+    .gather_1 {
+
+      position: relative;
+      padding: 15px;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      text-align: justify;
+      font-size: 14px;
+
+      div:first-child{
+
+        color: #8a8a8a;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 15px;
+        width: 92%;
+        height: 1px;
+        border-bottom: 1px solid #ddd;
+        transform-origin: 0 0;
+        transform: scaleY(.6);
+
+      }
+     /* &:last-child:after{
+        border-bottom: none;
+      }*/
+
+
+    }
+
+
+  }
+
+  .hkb_bill_details_btn{
+    display: block;
+    height: 42px;
+    width: 90%;
+    background: linear-gradient(left, #8abc23, #9ac53b, #acd163, #c4dc81);
+    border-radius: 5px;
+    text-align: center;
+    overflow: auto;
+    margin: 30px auto;
+
+
+    .bill_btn{
+      font-size: 16px;
+      line-height: 42px;
+      color:#ffffff;
+      background: none;
+      margin: 0 auto;
+
+    }
+    &:active{
+      opacity: .8;
+    }
+
+  }
+
+}
